@@ -2,8 +2,9 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-// DEFINE
+// LOCAL JUDGING - REMOVE IF NEEDED
 #define _MY_TEST_FILES true
+#define _HAS_NUM_TESTCASES_INPUT true
 
 // MACROS
 #define ll long long
@@ -34,6 +35,7 @@ int main() {
   freopen("my_ans.txt", "w", stdout);
 #endif
 
+#ifdef _HAS_NUM_TESTCASES_INPUT
   // keep this, testcases
   int t;
   cin >> t;
@@ -43,6 +45,9 @@ int main() {
     // cout << "Case #" << i << ": ";
     solve();
   }
+#else
+  solve();
+#endif
 
   return 0;
 }
